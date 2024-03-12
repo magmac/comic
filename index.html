@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+    <noscript>
+    </noscript>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script> 
+    <script type="text/javascript">
+      console.log(
+        `%c env %c <%- env %> %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#42c02e ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+      );
+      console.log(
+        `%c Build Date %c <%- date %> %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#1475b2 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+      );
+      (function () {
+        var el = document.createElement('script');
+        var id = 1281148347;
+        el.type = 'text/javascript';
+        el.charset = 'utf-8';
+        el.async = true;
+        var ref = document.getElementsByTagName('script')[0];
+        ref.parentNode.insertBefore(el, ref);
+        el.src = 'https://w.cnzz.com/c.php?id=' + id + '&async=1';
+      })();
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,67 @@
+.shareBox {
+    padding: 1rem 0.8rem;
+    background: $primary; /* Old browsers */
+    background: -moz-linear-gradient(top, $primary 0%, #fff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $primary 0%, #fff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $primary 0%, #fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f44336', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+    border-radius: 0.5rem;
+}
+
+.box {
+    padding: 0.6rem 0.5rem 0;
+    background-color: white;
+    border-radius: 0.3rem;
+
+    .name {
+        display: -webkit-box;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .img {
+        position: relative;
+        height: 12rem;
+        margin-bottom: 0.3rem;
+        border-radius: 0.3rem;
+        overflow: hidden;
+    }
+
+    .url {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: $primary;
+    margin-bottom: .5rem;
+}
+
+.share {
+    display: flex;
+    margin-bottom: 1rem;
+
+    .li {
+        flex: 50%;
+
+        .description {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .qr {
+            width: 8rem;
+        }
+    }
+}
+
+.ex {
+    font-size: 0.9rem;
+    color: #999;
+}

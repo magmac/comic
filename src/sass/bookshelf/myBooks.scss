@@ -1,0 +1,47 @@
+.el-skeleton {
+    display: flex;
+    margin-top: 1rem;
+
+    &__image {
+        height: 11rem;
+    }
+
+    &__h3 {
+        margin-top: 0.5rem;
+    }
+}
+
+.box {
+    padding-bottom: 5rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    margin: 0 1rem;
+    border-bottom: 0.1rem #eaeaea solid;
+
+    .column {
+        display: flex;
+        align-items: center;
+    }
+
+    i {
+        padding-right: 0.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+}
+
+.item {
+    flex: 32% 0 0;
+    margin: 0 0.667% 0.5rem 0.667%;
+}

@@ -1,0 +1,6 @@
+export const CARTOONS = 'CARTOONS'
+export const FIRSTDATE = 'FIRSTDATE'
+export const BULLETINPOPUP = 'BULLETINPOPUP'
+export const BULLETINDATE = 'BULLETINDATE'
+export const GIFTINFO = 'GIFTINFO'
+export const TOGGLELOADING = 'TOGGLELOADING'

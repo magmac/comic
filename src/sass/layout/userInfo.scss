@@ -1,0 +1,151 @@
+.skeleton {
+    &__top {
+        display: flex;
+        margin: 1.5rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__user {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 1rem;
+    }
+}
+
+.el-skeleton {
+    &__circle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &__rect {
+        width: 10rem;
+    }
+
+    &__h1 {
+        margin-top: 1rem;
+    }
+}
+
+.top {
+    padding: 1rem;
+    background: url('/@/assets/memberBg.png') top right no-repeat;
+    background-size: cover;
+    box-shadow: inset -5px -10px 5px -10px black;
+    .info {
+        display: flex;
+        align-items: center;
+        justify-self: start;
+        padding-bottom: 2rem;
+
+        .avatar {
+            width: 4rem;
+            height: 4rem;
+            background: url('/@/assets/user.png') center no-repeat;
+            background-size: cover;
+            border: 0.2rem $primary solid;
+            border-radius: 100rem;
+        }
+
+        .userBox {
+            margin-left: 1rem;
+
+            .user {
+                font-weight: bold;
+                .id {
+                    font-size: 0.85rem;
+                    font-weight: normal;
+                }
+                .password {
+                    margin-left: .5rem;
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                    color: #666;
+                }
+            }
+
+            .progress {
+                position: relative;
+                width: 8rem;
+                height: 0.3rem;
+                border: 0.1rem solid $primary;
+                border-radius: 1rem;
+
+                .bar {
+                    position: absolute;
+                    top: -0.1rem;
+                    left: -0.1rem;
+                    display: inline-block;
+                    height: 0.3rem;
+                    background-color: $primary;
+                    border-radius: 1rem;
+                }
+            }
+
+            .gap {
+                margin-bottom: 0.5rem;
+                .upgrade {
+                    font-size: 0.8rem;
+                    color: #666;
+                    span {
+                        color: $primary;
+                    }
+                }
+
+                .topay {
+                    font-size: 0.8rem;
+                    display: inline-block;
+                    padding: 0.2rem 0.5rem;
+                    margin-top: 0.2rem;
+                    color: white;
+                    background-color: rgba($primary, .9);
+                    border-radius: 10rem;
+                }
+            }
+        }
+    }
+
+    .welfare {
+        display: flex;
+
+        .item {
+            flex: 33.33% 0 0;
+            padding: 0 .5rem;
+            text-align: center;
+
+            &:not(:first-child) {
+                border-left: 0.1rem rgb(220, 220, 220) solid;
+            }
+        }
+
+        .icon {
+            font-size: 1.6rem;
+            border: 0.1rem rgba($primary, .8) solid;
+            border-radius: 2rem;
+            padding: .5rem;
+            color: $primary;
+        }
+
+        .instruction {
+            font-size: .8rem;
+            margin: .2rem 0;
+            font-weight: bold;
+        }
+        
+        .value {
+            color: #999;
+            font-size: .85rem;
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            color: $primary;
+            span {
+                padding-left: 0.3rem;
+            }
+        }
+    }
+}

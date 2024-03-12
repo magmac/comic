@@ -1,0 +1,4 @@
+export const FETCHDATA = 'FETCHDATA'
+export const TOGGLEFAV = 'TOGGLEFAV'
+export const FETCHVIDEOS = 'FETCHVIDEOS'
+export const FAVLOADING = 'FAVLOADING'

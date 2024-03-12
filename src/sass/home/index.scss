@@ -1,0 +1,58 @@
+.books {
+    margin-top: 0.5rem;
+    background-color: white;
+}
+
+.footeradv {
+    bottom: 4rem;
+    z-index: 2;
+    width: 100%;
+}
+
+.gift {
+    position: sticky;
+    bottom: 8rem;
+    z-index: 1;
+    float: right;
+    width: 3.5rem;
+    margin: -3.5rem 1rem 0;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: fall 5s 2s infinite forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-1rem);
+        animation-timing-function: ease-in;
+    }
+
+    13% {
+        transform: translateY(-0.8rem);
+        animation-timing-function: ease-in;
+    }
+
+    27% {
+        transform: translateY(-0.6rem);
+        animation-timing-function: ease-in;
+    }
+
+    37% {
+        transform: translateY(-0.4rem);
+        animation-timing-function: ease-in;
+    }
+
+    41% {
+        transform: translateY(-0.2rem);
+        animation-timing-function: ease-in;
+    }
+
+    5%,
+    20%,
+    32%,
+    44%,
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}

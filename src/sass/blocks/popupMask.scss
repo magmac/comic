@@ -1,0 +1,26 @@
+.mask {
+    top: 0;
+    z-index: 201;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box {
+    width: 85%;
+    max-width: 25rem;
+
+    .close {
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+
+        i {
+            cursor: pointer;
+        }
+    }
+}

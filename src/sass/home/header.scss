@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: white;
+    border: 1px solid #ebe9e9;
+}
+
+.form {
+    margin-left: 1.5rem;
+}
+
+.logo {
+    width: 6rem;
+    height: 2.75rem;
+    background: url('/@/assets/logo.png') center no-repeat;
+    background-size: contain;
+}

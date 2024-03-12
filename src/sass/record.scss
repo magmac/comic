@@ -1,0 +1,75 @@
+.box {
+    margin-bottom: 1rem;
+}
+
+.dateYM {
+    position: sticky;
+    top: 5.5rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: white;
+    border-bottom: 0.1rem solid #ebeef5;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid #ebeef5;
+
+    > div {
+        padding: 0.2rem 1rem 0.2rem;
+    }
+
+    .dateD {
+        flex: 1;
+        text-align: center;
+    }
+
+    .name {
+        flex: 5;
+        border-right: 0.1rem solid #ebeef5;
+        border-left: 0.1rem solid #ebeef5;
+
+        p {
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        span {
+            font-size: 0.9rem;
+            color: #999;
+        }
+    }
+
+    .beans {
+        flex: 1.8;
+        color: $primary;
+        text-align: center;
+    }
+}
+
+.th {
+    position: sticky;
+    top: 3rem;
+    z-index: 2;
+    height: 2.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    background-color: #f5f7fa;
+
+    > div {
+        padding: 0 1rem;
+    }
+
+    .beans {
+        color: inherit;
+    }
+}

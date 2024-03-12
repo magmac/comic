@@ -1,0 +1,51 @@
+.appBar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding: 0 0.6rem;
+    background-color: white;
+    border: 1px solid #ebe9e9;
+    opacity: 0.95;
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: url('/@/assets/appIcon.png') center no-repeat;
+            background-size: contain;
+        }
+
+        p {
+            padding-left: 0.5rem;
+            font-size: 0.8rem;
+            color: $primary;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+
+        a {
+            padding: 0.3rem 0.5rem;
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+            color: white;
+            background-color: $primary;
+            border-radius: 10rem;
+        }
+
+        .el-icon-close {
+            padding: 0.3rem 0 0.3rem 0.3rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}

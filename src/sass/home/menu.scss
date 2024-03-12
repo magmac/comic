@@ -1,0 +1,46 @@
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0 0;
+    text-align: center;
+    background-color: white;
+
+    li {
+        a {
+            display: block;
+            font-weight: bold;
+        }
+    }
+}
+
+.icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .data {
+    background-color: $primary;
+  }
+  
+  .goods {
+    background-color: #7bc7ff;
+  }
+  
+  .coin {
+    background-color: #fe6bc7;
+  }
+  
+  .video {
+    background-color: #f0c30f;
+  }
+  
+  .chat {
+    background-color: #ff528b;
+  }

@@ -1,0 +1,6 @@
+export const HISTORY = 'HISTORY'
+export const MY_BOOKS = 'MY_BOOKS'
+export const FETCHDATA = 'FETCHDATA'
+export const DELE_MY_BOOKS = 'DELE_MY_BOOKS'
+export const DELE_HISTORY_BOOKS = 'DELE_HISTORY_BOOKS'
+export const DELE_ALL_HISTORY_BOOKS = 'DELE_ALL_HISTORY_BOOKS'

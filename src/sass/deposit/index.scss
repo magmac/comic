@@ -1,0 +1,155 @@
+.deposit {
+    margin-top: 0.8rem;
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .5rem;
+
+    i {
+        padding-right: 0.3rem;
+        font-size: 1.5rem;
+    }
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    li {
+        position: relative;
+        flex: 49% 0 0;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        line-height: 1.5rem;
+        text-align: center;
+        border-radius: 0.2rem;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
+    &.day {
+        li {
+            flex: 100% 0 0;
+        }
+    }
+}
+
+.tag {
+    position: absolute;
+    top: 1rem;
+    right: -1rem;
+    left: auto;
+    width: 5rem;
+    height: 1rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    color: #fff;
+    text-align: center;
+    background: $primary;
+    transform: rotate(45deg);
+}
+
+.virtual {
+    font-size: 0.9rem;
+
+    span {
+        color: $primary;
+    }
+
+    em {
+        font-size: 0.7rem;
+        color: #999;
+    }
+}
+
+.ex {
+    font-size: 0.9rem;
+
+    strong {
+        font-weight: normal;
+    }
+
+    span {
+        padding: 0.1rem 0.2rem;
+        margin-left: 0.3rem;
+        font-size: 0.7rem;
+        color: white;
+        border-radius: 0.2rem;
+    }
+
+    .hot {
+        background-color: $primary;
+    }
+
+    .promote {
+        background-color: #2dca2f;
+    }
+}
+
+.description {
+    font-size: 0.9rem;
+
+    b {
+        font-size: 1.2rem;
+        color: $primary;
+    }
+}
+
+.subscription {
+    font-size: 0.9rem;
+}
+
+.vipDay {
+    font-size: 0.9rem;
+
+    b {
+        font-size: 1.2rem;
+        color: $primary;
+    }
+}
+
+.activityBanner {
+    cursor: pointer;
+}
+
+.remind {
+    padding: .5rem .5rem 1rem .5rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #999;
+    text-align: center;
+}
+
+.service {
+    display: block;
+    color: $primary;
+    font-weight: bold;
+    margin: 1rem 0 .5rem;
+    text-align: center;
+}
+
+.hint {
+    font-size: .9rem;
+    padding: .3rem 1rem;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    &.ps {
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+    a {
+        color: $primary;
+    }
+}

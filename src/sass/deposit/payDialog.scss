@@ -1,0 +1,32 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    li {
+        flex: 33% 0 0;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        text-align: center;
+        cursor: pointer;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-bottom: .2rem;
+        }
+    }
+}
+
+p {
+    padding: 1rem 0 1rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: #999;
+    text-indent: -0.5rem;
+
+    i {
+        padding-right: 0.2rem;
+        color: #05af45;
+    }
+}

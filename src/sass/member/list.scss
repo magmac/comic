@@ -1,0 +1,24 @@
+.nav {
+    padding: 0 1rem;
+
+    li {
+        border-bottom: 0.1rem #eaeaea solid;
+
+        &:last-child {
+            border-bottom: 0 none;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+            font-weight: bold;
+        }
+    }
+}
+
+.loginBtn {
+    width: calc(100% - 2rem);
+    margin: 1.5rem 1rem;
+}

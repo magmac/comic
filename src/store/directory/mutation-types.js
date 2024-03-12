@@ -1,0 +1,3 @@
+export const FETCHDATA = 'FETCHDATA'
+export const CHAPTERS = 'CHAPTERS'
+export const TOGGLEMYBOOK = 'TOGGLEMYBOOK'

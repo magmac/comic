@@ -1,0 +1,30 @@
+.image {
+    position: relative;
+    height: 100%;
+
+    &.error {
+        background: rgba(0, 0, 0, 0.1) url('/@/assets/logo.png') center no-repeat;
+        background-size: 60%;
+    }
+}
+
+.loading {
+    position: absolute;
+    z-index: 1;
+    background-color: #f2f2f2;
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.3s;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
+.v-enter-to,
+.v-leave-from {
+    opacity: 1;
+}

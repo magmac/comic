@@ -1,0 +1,25 @@
+.retrieve {
+    padding: 1rem;
+
+    .form {
+        margin-top: 2rem;
+    }
+
+    .ex {
+        padding: 0.5rem;
+        background-color: rgba($primary, 0.05);
+        border: 0.1rem $primary solid;
+        border-radius: 0.2rem;
+    }
+}
+
+.bottom {
+    bottom: 2rem;
+    width: calc(100% - 2rem);
+    max-width: $maxWidth - 2rem;
+    text-align: center;
+
+    .btn {
+        width: 100%;
+    }
+}

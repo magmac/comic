@@ -1,0 +1,4 @@
+export const FETCHDATA = 'FETCHDATA'
+export const CLEARDATA = 'CLEARDATA'
+export const CLEARIMAGES = 'CLEARIMAGES'
+export const TOGGLEMYBOOK = 'TOGGLEMYBOOK'

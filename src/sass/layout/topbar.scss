@@ -1,0 +1,56 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: $primary;
+    transition: 0.3s linear;
+    justify-content: space-between;
+
+    i {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .el-icon-arrow-left {
+        padding-right: .5rem;
+        font-weight: bold;
+    }
+
+    .el-icon-s-home {
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+}
+
+.backBox {
+    display: flex;
+    flex-flow: column;
+
+    .title {
+        display: -webkit-box;
+        overflow: hidden;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.2rem;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    .title2 {
+        -webkit-line-clamp: 2;
+    }
+
+    .subTitle {
+        padding-top: 0.4rem;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+}

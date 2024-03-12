@@ -1,0 +1,23 @@
+.el-skeleton {
+    &__text {
+        width: 3rem;
+        height: 1rem;
+        margin: .8rem .5rem;
+    }
+}
+
+.tags {
+    display: flex;
+    padding: 0.8rem 0.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    li {
+        margin: 0 0.3rem;
+
+        .router-link-active {
+            font-weight: bold;
+            color: $primary;
+        }
+    }
+}

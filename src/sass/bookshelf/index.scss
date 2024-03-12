@@ -1,0 +1,21 @@
+.tabs {
+    position: sticky;
+    top: 3rem;
+    z-index: 10;
+    display: flex;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+
+    a {
+        flex: 50% 0 0;
+        height: 3rem;
+        font-weight: bold;
+        line-height: 3rem;
+        color: $primary;
+
+        &.router-link-active {
+            border-bottom: 0.1rem solid $primary;
+        }
+    }
+}

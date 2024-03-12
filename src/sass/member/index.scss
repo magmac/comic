@@ -1,0 +1,41 @@
+.member {
+    .mine {
+        margin-top: 0.8rem;
+        background: white;
+    }
+
+    .cooperate {
+        margin: 1rem;
+        padding: .2rem .5rem;
+        border-radius: 0.2rem;
+        border: 0.1rem #eaeaea solid;
+        font-size: .85rem;
+        color: #999;
+        p {
+            padding-bottom: .3rem;
+        }
+        a {
+            color: #409eff;
+        }
+    }
+
+    .permanent {
+        color: $primary;
+        font-weight: bold;
+        width: 23rem;
+        height: 4rem;
+        line-height: 4rem;
+        margin: 1rem auto 0 auto;
+        display: -webkit-box;
+        align-items: center;
+        padding-left: 3.8rem;
+        background: url('/@/assets/permanentBg.png') center no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}

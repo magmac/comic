@@ -1,0 +1,13 @@
+@mixin skeletonVideoColumns {
+    float: left;
+    width: 48%;
+    margin: 0.5rem 1% 0.5rem;
+}
+
+@mixin skeletonVideoColumnsImage {
+    height: 8rem;
+}
+
+@mixin skeletonVideoColumnsH5 {
+    margin-top: 0.3rem;
+}

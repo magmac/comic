@@ -1,0 +1,47 @@
+.el-skeleton {
+    &__image {
+        height: 7rem;
+    }
+}
+
+.bulletin {
+    padding: 0 1rem;
+}
+
+.item {
+    margin-top: 1rem;
+    border-bottom: 0.1rem #eaeaea solid;
+
+    &:last-child {
+        border-bottom: 0 none;
+    }
+
+    .img {
+        position: relative;
+        min-height: 7rem;
+        border-radius: 0.3rem;
+    }
+
+    a {
+        display: block;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+        margin-top: 0.3rem;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        span {
+            flex: 5rem 0 0;
+            font-size: 0.8rem;
+            color: #999;
+            text-align: right;
+        }
+    }
+}

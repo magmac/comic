@@ -1,0 +1,133 @@
+.title {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0.6rem;
+}
+
+.table {
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+
+    > div {
+        &:last-child {
+            border-bottom-right-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+    }
+
+    .warm {
+        padding-bottom: 1.2rem;
+        color: $primary;
+        text-align: center;
+        background-color: #cecece;
+
+        p {
+            padding: 0.8rem 0.2rem;
+            font-size: 0.8rem;
+            text-align: left;
+
+            &.bottomText {
+                padding-bottom: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .tr {
+        display: flex;
+        text-align: center;
+
+        &:nth-child(even) {
+            background-color: #cecece;
+        }
+
+        .th {
+            font-weight: bold;
+        }
+
+        .td {
+            > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 1.6rem;
+                margin: 0.3rem 0;
+            }
+
+            .bonus {
+                height: auto;
+                margin: 0;
+
+                &::before {
+                    margin: 0.2rem 0;
+                    font-size: 0.6rem;
+                    content: "+";
+                }
+
+                &:first-child {
+                    &::before {
+                        margin: 0;
+                        content: "";
+                    }
+                }
+
+                .ex {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .level {
+                padding-left: 1.5rem;
+                background: left center no-repeat;
+
+                @for $i from 1 through 5 {
+                    &.level#{$i} {
+                        background-image: url('/@/assets/level-#{$i}.png');
+                    }
+                }
+            }
+
+            .get {
+                padding: 0.1rem 0.6rem;
+                font-size: 0.8rem;
+                color: white;
+                cursor: pointer;
+                background-color: #00b400;
+                border-radius: 10rem;
+            }
+        }
+
+        .td,
+        .th {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8rem 0.2rem;
+
+            &:first-child {
+                flex: 1;
+            }
+
+            &:nth-child(2n) {
+                flex: 1.2;
+            }
+
+            &:nth-child(3n) {
+                flex: 1.5;
+            }
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    color: #fff700;
+    background-color: $primary;
+    border: 0.2rem white solid;
+    border-radius: 10rem;
+}

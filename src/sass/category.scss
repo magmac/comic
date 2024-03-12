@@ -1,0 +1,39 @@
+.el-skeleton {
+    &__text {
+        width: 3rem;
+        height: 1rem;
+        margin: 0 .5rem .8rem .5rem;
+    }
+}
+
+.category {
+    padding: 0 1rem;
+}
+
+.mainCategory {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem #eaeaea solid;
+
+    li {
+        padding: 0.3rem 0.8rem;
+        margin: 0.5rem 0.5rem 0 0;
+        font-size: 0.8rem;
+        color: $primary;
+        cursor: pointer;
+        border-radius: 2rem;
+
+        &.active {
+            color: white;
+            background-color: $primary;
+        }
+    }
+
+    &.vice {
+        li {
+            border: 0.1rem $primary solid;
+        }
+    }
+}

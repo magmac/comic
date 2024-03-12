@@ -1,0 +1,131 @@
+.directory {
+    min-height: calc(100vh - 3rem);
+    background-color: white;
+}
+
+.bigImg {
+    height: 12rem;
+    overflow: hidden;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.info {
+    padding: 0 1rem;
+
+    .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        font-size: 1.2rem;
+        color: $primary;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3rem 0;
+        font-size: 0.8rem;
+        color: #999;
+
+        .type {
+            span {
+                padding: 0.2rem 0.5rem;
+                color: white;
+                border-radius: 0.2rem;
+            }
+        }
+
+        .news {
+            font-size: 0.8rem;
+            color: #999;
+
+            i {
+                color: #ffbe24;
+            }
+        }
+
+        .block {
+            font-size: 0.8rem;
+
+            span {
+                color: #333;
+            }
+        }
+    }
+}
+
+.button {
+    display: flex;
+    padding: 0.5rem 0 1rem 0;
+
+    button {
+        flex: 50%;
+    }
+}
+
+.description {
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.el-collapse {
+    position: relative;
+
+    .number {
+        position: absolute;
+        right: 2rem;
+    }
+
+    .headTitle {
+        font-size: 1rem;
+    }
+}
+
+.chapters {
+    li {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        border-bottom: 0.1rem #eaeaea solid;
+
+        &:last-child {
+            margin-bottom: 1rem;
+            border-bottom: 0 none;
+        }
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                align-items: center;
+
+                .name {
+                    margin-left: 0.5rem;
+                }
+
+                .img {
+                    width: 6rem;
+                    height: 3rem;
+                }
+            }
+
+            .right {
+                font-size: 1.1rem;
+
+                .el-icon-coin {
+                    margin-right: 0.5rem;
+                    color: #eac704;
+                }
+            }
+        }
+    }
+}

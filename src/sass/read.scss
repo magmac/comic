@@ -1,0 +1,159 @@
+.read {
+    &.blur {
+        overflow: hidden;
+
+        .images {
+            width: calc(100% + 0.6rem);
+            margin-top: -0.3rem;
+            margin-left: -0.3rem;
+            filter: blur(0.3rem);
+        }
+    }
+    .divider {
+        &:not(:last-child):after {
+            display: block;
+            content: "";
+            height: .5rem;
+            box-shadow:inset 0px 5px 5px -5px black, inset 0px -5px 5px -5px black; 
+        }
+    }
+}
+
+.user {
+    font-size: .8rem;
+    text-align: right;
+    margin-left: auto;
+    .el-icon-coin {
+        &:before {
+            padding-right: 0.2rem;
+        }
+    }
+}
+
+.footer {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    color: $primary;
+    background-color: white;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.2);
+    transition: 0.3s linear;
+    z-index: 1;
+
+    &.hide {
+        bottom: -3rem;
+    }
+
+    li {
+        padding: 0 .6rem;
+        display: flex;
+        border-right: 1px solid #ccc;
+        &:last-child {
+            border: 0 none;
+        }
+
+        &.catalog {
+            padding-right: .2rem;
+            width: 4rem;
+        }
+
+        &.fav {
+            padding-left: .2rem;
+            width: 4rem;
+            justify-content: right;
+            &.keep {
+                color: #999;
+            }
+        }
+
+        &.chapter {
+            justify-content: center;
+            flex-grow: 1;
+            .text {
+                width: 50%;
+                text-align: center;
+                color: $primary;
+            }
+            .none {
+                color: #999;
+            }
+        }
+    }
+}
+
+.promptBox {
+    bottom: 1rem;
+    z-index: 10;
+    width: calc(100% - 2rem);
+    max-width: $maxWidth - 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+    .text {
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.6rem;
+        border-bottom: 0.1rem #eaeaea solid;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .ex {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        text-align: right;
+
+        a {
+            color: $primary;
+        }
+    }
+}
+
+.header {
+    width: 100%;
+}
+
+.topadv {
+    top: 3rem;
+    z-index: 1;
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.hide {
+    top: -3rem;
+}
+
+.topHide {
+    top: 0;
+    opacity: 0;
+}
+
+.footeradv {
+    bottom: 3rem;
+    z-index: 1;
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.footerHide {
+    bottom: 0;
+    opacity: 0;
+}
+
+.readbar {
+    position: fixed;
+    bottom: 0;
+    height: .2rem;
+    background-color: $primary;
+}

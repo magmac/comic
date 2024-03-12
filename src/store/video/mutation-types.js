@@ -1,0 +1,5 @@
+export const TOGGLEFAV = 'TOGGLEFAV'
+export const VIDEOS = 'VIDEOS'
+export const VIDEOLINKID = 'VIDEOLINKID'
+export const FAVLOADING = 'FAVLOADING'
+export const PREVIEW = 'PREVIEW'
